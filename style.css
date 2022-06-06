@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:opsz@9..144&display=swap');
+
+
+/* -------------Variables------------- */
+
+:root{
+    /*text colors*/
+    --text-white: #ffffff;
+    --text-gray: #838384;
+    --text-black: #000000;
+    --box-shadow:0px 0px 50px 0px rgb(0 0 0 / 10%);
+    --bg-white: #ffffff;
+    --bg-green: rgb(156 217 202);
+    --bg-light-blue: rgb(111 207 255);
+    --bg-yellow: rgb(255 212 1);
+
+    /*font family*/
+    --font-fraunces: "Fraunces", 'serif';
+    --font-barlow: "Barlow", 'sans-serif';
+
+    /*images*/
+    --bg-header-lg: url('./assets/desktop/image-header.jpg');
+    --bg-header-sm: url('./assets/mobile/image-header.jpg');
+
+}
+
+/* -------------/Variables------------- */
+
+/*removing padding, marging and borders from all the elements*/
+*>*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*removing auto formating from a tag*/
+a{
+    text-decoration: none;
+}
+
+/*removing auto formating from ul tag*/
+ul{
+    list-style-type: none;
+}
+
+/* -------------Global Classes------------- */
+.text-white{
+    color:var(--text-white);
+}
+.text-gray{
+    color:var(--text-gray);
+}
+.text-black{
+    color:var(--text-black);
+}
+.bg-white{
+    color:var(--bg-white);
+}
+.bg-green{
+    color:var(--bg-green);
+}
+.bg-bg-light-blue{
+    color:var(--bg-light-blue);
+}
+.bg-yellow{
+    color:var(--bg-yellow);
+}
+.bg-header-lg{
+    background-image: var(--bg-header-lg);
+    object-fit: fill;
+}
+.bg-header-sm{
+    background-image: var(--bg-header-sm);
+    object-fit: fill;
+}
+.font-fraunces{
+    font-family: var(--font-fraunces);
+}
+.font-barlow{
+    font-family: var(--font-barlow);
+}
+.text-center{
+    text-align: center;
+}
+.text-size-sm{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.text-size-lg{
+    font-size: 2.2em;
+    line-height: 3rem;
+}
+.font-bold{
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-init{
+    flex: 0 1 auto;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.container{
+    width: 100%;
+}
+.container-fluid{
+    width: 98%;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.py-2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-5{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.py-10{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.px-5{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.px-10{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+.link{
+    background-color: var(--bg-white);
+    color: var(--text-black);
+    font-family: var(--font-barlow);
+}
+.link:hover{
+    background-color: var(--bg-light-blue);
+    color: var(--text-white);
+    font-family: var(--font-barlow);
+}
+.d-inline{
+    display: inline-block;
+}
+.d-block{
+    display: block;
+}
+.grid{
+    display: grid;
+}
+.cols-1{
+    grid-template-columns: repeat(1,maxmin(0,1fr));
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+/* -------------/Global Classes------------- */
